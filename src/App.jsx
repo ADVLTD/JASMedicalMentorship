@@ -12,6 +12,7 @@ export default function app() {
   return (
     <>
       <Nav />
+      <Hero />
       <Footer />
     </>
   )
