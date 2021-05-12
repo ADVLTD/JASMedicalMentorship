@@ -7,7 +7,7 @@ export default function Nav() {
       <header className="spaceBetween">
         <div className="cookiesDetails flex">
           <p>
-            :cookie: This website uses cookies to provide the optimal user experience.{" "}
+            🍪 This website uses cookies to provide the optimal user experience.{" "}
           </p>
           <a href="#">Learn More</a>
         </div>
