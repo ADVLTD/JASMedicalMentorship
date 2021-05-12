@@ -10,8 +10,9 @@ import BookingForm from './components/BookingForm'
 
 export default function app() {
   return (
-    <div>
-     <h1>Lets Do it</h1>
-    </div>
+    <>
+      <Nav />
+      <Footer />
+    </>
   )
 }
