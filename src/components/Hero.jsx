@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "../Images/Pngs/logoJamal-removebg-preview.png";
+import Logo from "../Images/Svgs/Logo.svg";
 import AppointmentLogo from "../Images/Svgs/appointmantIcon-01.svg";
 import docImg from "../Images/Pngs/doctorImg-01.png";
 export default function Hero() {
