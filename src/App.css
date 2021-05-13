@@ -91,8 +91,9 @@ header {
 }
 .heroDetails h1 span:nth-child(1) {
     color: #1bcc97ff;
+    border-bottom: .15em solid #1bcc97ff;
 }
-.heroDetails h1 span:nth-child(1):before {
+/* .heroDetails h1 span:nth-child(1):before {
     content: "";
     position: absolute;
     width: 297px;
@@ -102,7 +103,7 @@ header {
     z-index: -1;
     top: 87px;
     z-index: 1;
-}
+} */
 .heroDetails h1 span:nth-child(2) {
     color: #45a8d5ff;
 }
@@ -290,5 +291,5 @@ header {
     padding-left: 4em;
 }
 img[alt="points"]{
-    padding-top: 0.25em;
+    padding-top: 0.3em;
 }
