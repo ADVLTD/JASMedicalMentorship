@@ -14,6 +14,7 @@ export default function app() {
       <Nav />
       <Hero />
       <Qualifications/>
+      <Booking />
       <Footer />
     </>
   )
