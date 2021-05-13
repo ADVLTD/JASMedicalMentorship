@@ -183,3 +183,112 @@ header {
     padding-top: 3em;
     color: rgb(92, 92, 92);
 }
+/* Qualifications */
+.qualifications {
+    padding: 4em 7em;
+}
+
+.wholeQualifications h2,
+.wholeExperience h2,
+.wholeRegistration h2,
+.wholeAchievments h2 {
+    position: relative;
+    padding-bottom: 1em;
+}
+
+.wholeQualifications h2:before,
+.wholeExperience h2:before,
+.wholeRegistration h2:before,
+.wholeAchievments h2:before {
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 3px;
+    transform: skew(0deg) translateX(0%) rotate(360deg);
+    background: #000000;
+    z-index: -1;
+    top: 33px;
+    z-index: 1;
+}
+
+.wholeExperience h2:before {
+    width: 138px;
+}
+
+.wholeRegistration h2:before {
+    width: 158px;
+}
+
+.wholeAchievments h2:before {
+    width: 158px;
+}
+
+.singleQualification:nth-child(1) {
+    padding-bottom: 2.3em;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.singleQualification {
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    padding-bottom: 1em;
+}
+
+.qualificationDetails {
+    padding-left: 1em;
+}
+
+.qualificationDetails p {
+    font-weight: 500;
+}
+
+.qualificationDetails p:nth-child(2) {
+    color: rgb(114, 114, 114);
+    font-weight: 500;
+}
+
+.wholeSectionUnderQ,
+.wholeAchievments {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 3em;
+}
+
+.wholeSectionUnderQ .wholeRegistration {
+    padding-right: 4em;
+}
+
+.quote {
+    padding-bottom: 2em;
+    width: 67%;
+}
+
+.quote p {
+    font-weight: 500;
+}
+
+.quote p span,
+.wholeAchievments .qualificationDetails p span {
+    color: #1bcc97ff;
+    font-weight: bold;
+}
+
+.wholeAchievments .qualificationDetails p {
+    width: 65%;
+}
+
+.quote p {
+    padding-left: 1.5em;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.wholeAchievments .singleQualification:nth-child(3),
+.wholeAchievments .singleQualification:nth-child(4) {
+    padding-left: 4em;
+}
+img[alt="points"]{
+    padding-top: 0.25em;
+}

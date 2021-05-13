@@ -13,6 +13,7 @@ export default function app() {
     <>
       <Nav />
       <Hero />
+      <Qualifications/>
       <Footer />
     </>
   )
