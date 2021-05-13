@@ -293,3 +293,58 @@ header {
 img[alt="points"]{
     padding-top: 0.3em;
 }
+/* Booking  */
+.booking {
+    background-image: url("./Images/Pngs/Booking-01.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bookingContainer{
+    width:75%;
+    padding: 9vh 0;
+}
+.bookingLeftSide {
+   width:60%;
+    padding: 0em 0;
+    padding-right: 2em;
+}
+​.bookingRightSide {
+    justify-content: center;
+    align-items: center;
+}
+.bookingRightSide .heroButtons {
+    box-shadow: 0 0 30px 0 #afafaf5e;
+    padding: 1em 1em;
+    justify-content: flex-start;
+    width: fit-content;
+}
+.bookingLeftSide h1:nth-child(1) {
+    padding-bottom: 1em;
+}
+.bookingLeftSide h1:nth-child(1) span {
+    color: #1bcc97ff;
+}
+.bookingLeftSide h1:nth-child(2) span {
+    color: #45a8d5ff;
+    position: relative;
+}
+.bookingLeftSide h1:nth-child(2) span:before {
+    content: "";
+    position: absolute;
+    width: 202px;
+    height: 5px;
+    transform: skew(0deg) translateX(0%) rotate(359deg);
+    background: #45a8d5ff;
+    z-index: -1;
+    top: 41px;
+    z-index: 1;
+}
+.bookingRightSide small {
+    padding-left: 1em;
+    color: #777777;
+}

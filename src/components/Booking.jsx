@@ -4,8 +4,9 @@ import AppointmentLogo from "../Images/Svgs/appointmantIcon-01.svg";
 export default function Booking() {
     return (
             /* This contains the booking promotion */
-            <div className="booking flex">
-      <div className="bookingLeftSide">
+            <div className="booking">
+     <div className="bookingContainer flex">
+     <div className="bookingLeftSide">
         <h1>
           We believe that <span>every doctor</span> every where should be at the
           top of their game.
@@ -22,6 +23,7 @@ export default function Booking() {
           <small>20 available slots</small>
         </div>
       </div>
+     </div>
     </div>
 
     )
