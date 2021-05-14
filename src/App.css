@@ -477,6 +477,7 @@ footer {
     }
     .leftHero {
         height: fit-content;
+        padding-bottom: 50px;
     }
     .booking {
         height: 42vh;
