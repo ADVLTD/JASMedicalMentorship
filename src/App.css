@@ -451,3 +451,316 @@ footer {
 }
 
 .formGroupSingle input {}
+
+/* Media Quaries*/
+
+@media (max-width: 2560px) {}
+
+@media (max-width: 1886px) {
+    .hero {
+        height: fit-content;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero {
+        height: fit-content;
+    }
+    .booking {
+        height: 39vh;
+    }
+}
+
+@media (max-width: 1440px) {
+    .hero {
+        height: fit-content;
+    }
+    .leftHero {
+        height: fit-content;
+    }
+    .booking {
+        height: 42vh;
+    }
+}
+
+@media (max-width: 1340px) {
+    .booking {
+        height: 35vh;
+    }
+    .bookingLeftSide {
+        padding-right: 5em;
+    }
+}
+
+@media (max-width: 1156px) {
+    .leftHero,
+    .qualifications,
+    footer,
+    header {
+        padding-left: 4em;
+    }
+    .bookingLeftSide {
+        padding-left: 2em;
+    }
+    .booking {
+        height: 29vh;
+    }
+}
+
+@media (max-width: 1106px) {
+    .bookingRightSide {
+        width: 38%;
+    }
+    .bookingLeftSide {
+        padding-left: 4em;
+    }
+    .heroDetails h1 {
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        height: fit-content;
+        background-image: none;
+        /* background-position: 71% -185%;
+        background-size: 133%; */
+        padding: 2em 0em;
+    }
+    .rightHero {
+        width: 72%;
+        /* padding-top: 13em; */
+        padding: 0em 0em;
+    }
+    .learn {
+        width: 100%;
+        text-align: center;
+    }
+    .leftHero {
+        height: fit-content;
+        width: 100%;
+        padding: 0em 3em;
+        align-items: center;
+        padding-bottom: 5em;
+    }
+    .heroDetails {
+        text-align: center;
+        width: 100%;
+    }
+    .rightHero img {
+        width: 50%;
+        right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .bookingRightSide {
+        width: 44%;
+    }
+    .quote,
+    .wholeAchievments .qualificationDetails p {
+        width: 100%;
+    }
+    .booking {
+        height: fit-content;
+        padding: 3em 0em;
+        background-size: cover;
+        background-position-x: 87%;
+    }
+}
+
+@media (max-width: 852px) {
+    .bookingRightSide {
+        width: 53%;
+    }
+    .booking {
+        flex-direction: column;
+    }
+    .bookingLeftSide {
+        width: 100%;
+        padding-bottom: 4em;
+        text-align: center;
+    }
+    .bookingRightSide {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: fit-content;
+        padding: 1em 0em;
+    }
+    .cookiesAccept {
+        padding-top: 1em;
+    }
+    /* .wholeQualifications,
+    .wholeRegistration {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    } */
+    .wholeSectionUnderQ .wholeRegistration {
+        padding-right: 0em;
+        padding-bottom: 3em;
+    }
+    .singleQualification {
+        justify-content: flex-start;
+    }
+    /* .wholeRegistration .singleQualification:nth-child(2),
+    .wholeQualifications .singleQualification:nth-child(2),
+    .wholeQualifications .singleQualification:nth-child(3),
+    .wholeQualifications .singleQualification:nth-child(4),
+    .wholeQualifications .singleQualification:nth-child(5) {
+        align-self: flex-start;
+    } */
+    .wholeSectionUnderQ {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 714px) {
+    .rightHero {
+        /* padding-top: 15em; */
+    }
+}
+
+@media (max-width: 628px) {
+    footer {
+        flex-direction: column;
+        padding-bottom: 2em;
+        padding-top: 1em;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .copyrights,
+    .links {
+        padding-bottom: 1em;
+    }
+    .rightHero {
+        /* padding-top: 14em; */
+    }
+    .heroDetails h1 {
+        font-size: 2em;
+    }
+    .heroDetails h1 span:nth-child(1):before {
+        width: 241px;
+        top: 77px;
+    }
+    .bookingLeftSide h1:nth-child(1),
+    .bookingLeftSide h1:nth-child(2) {
+        font-size: 2em;
+    }
+    .rightHero img {
+        width: 100%;
+    }
+    .bookingLeftSide {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media (max-width: 512px) {
+    .bookingLeftSide h1:nth-child(1),
+    .bookingLeftSide h1:nth-child(2) {
+        font-size: 1.5em;
+    }
+    .bookingLeftSide h1:nth-child(2) span:before {
+        width: 152px;
+        top: 33px;
+    }
+    .heroDetails h1 {
+        font-size: 1.5em;
+        line-height: 39px;
+    }
+    .heroDetails h1 span:nth-child(1):before {
+        width: 182px;
+        top: 58px;
+    }
+    .cookiesDetails {
+        font-size: 0.6em;
+    }
+    header {
+        padding: 1em 2em;
+    }
+    .heroButtons {
+        width: 104%;
+    }
+    .qualifications {
+        padding: 4em 2em;
+    }
+    .leftHero,
+    .qualifications,
+    header {
+        padding-left: 2em;
+    }
+    .heroButtons {
+        flex-direction: column;
+    }
+    .heroButtons button:nth-child(2) {
+        margin-left: 0;
+        margin-top: 1em;
+        padding: 1.2em 1.8em;
+    }
+    .rightHero {
+        /* padding-top: 15em; */
+    }
+    .bookingRightSide .heroButtons small {
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 425px) {
+    .rightHero {
+        /* padding-top: 18em; */
+    }
+    .rightHero img {
+        width: 100%;
+    }
+    .cookiesDetails {
+        flex-direction: column;
+    }
+    .cookiesDetails p {
+        padding-bottom: 1em;
+    }
+    .wholeAchievments .singleQualification:nth-child(3),
+    .wholeAchievments .singleQualification:nth-child(4) {
+        padding-left: 0em;
+    }
+    .cookiesDetails {
+        font-size: 0.7em;
+    }
+    header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .heroDetails h1 {
+        font-size: 1.2em;
+        line-height: 32px;
+    }
+    .heroDetails h1 span:nth-child(1):before {
+        width: 144px;
+        top: 49px;
+    }
+    .cookiesDetails {
+        font-size: 0.55em;
+    }
+    header {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+@media (max-width: 320px) {}
