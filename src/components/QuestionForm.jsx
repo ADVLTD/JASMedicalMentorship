@@ -1,11 +1,11 @@
 import React from 'react'
 import closeIcon from "../Images/Svgs/closeIcon.svg";
 import required from "../Images/Pngs/required.png";
-export default function QuestionForm() {
+export default function QuestionForm({ closeFunc }) {
     return (
         <div className="questionForm flex">
         <form action="" className="flex">
-          <div className="closeIcon">
+          <div className="closeIcon" onClick={closeFunc}>
             <img width="12" src={closeIcon} alt="" />
           </div>
           <div className="formTitle flex">

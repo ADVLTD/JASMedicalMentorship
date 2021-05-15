@@ -2,7 +2,8 @@ import React from 'react'
 import Logo from "../Images/Svgs/Logo.svg";
 import AppointmentLogo from "../Images/Svgs/appointmantIcon-01.svg";
 import docImg from "../Images/Pngs/doctorImg-01.png";
-export default function Hero() {
+import arrow from "../Images/Pngs/arrow.png";
+export default function Hero({ openModal, openBookingFunc }) {
     return (
         <div className="hero flex">
         <div className="leftHero flex">
@@ -21,17 +22,18 @@ export default function Hero() {
             </p>
           </div>
           <div className="heroButtons flex">
-            <button className="flex">
+            <button className="flex"  onClick={openBookingFunc}>
               <img width="40" src={AppointmentLogo} alt="" /> Book a time
             </button>
-            <button>
+            <button onClick={openModal}>
               <span>Ask a question</span>
             </button>
           </div>
           <div className="learn">
-            <p>
-              Learn about Dr. Jamal AlSaab <span>&nbsp; 🡣</span>
-            </p>
+          <p>
+            Learn about Dr. Jamal AlSaab{" "}
+            <img width="15" src={arrow} alt="arrow" />
+          </p>
           </div>
         </div>
         <div className="rightHero flex">

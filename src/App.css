@@ -8,6 +8,23 @@ html {}
 body {
     font-family: Lexend, sans-serif;
 }
+::selection {
+    color: #1bcc97ff;
+    background-color: rgb(151, 245, 217);
+}
+
+.err {
+    width: 100%;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    color: #d11313;
+    padding-top: 0.5em;
+    font-weight: 500;
+}
+
+.emailPrivacy {
+    color: #747474 !important;
+}
 /* COLORS  */
 /*Nav color #42A6DA */
 /* #43BC93  */
