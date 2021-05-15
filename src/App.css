@@ -381,6 +381,25 @@ footer {
 .questionForm {
     width: 100%;
     height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.questionForm::before {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #fff; */
+    content: "";
+    position: absolute;
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.651);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .formTitle h2 {
@@ -395,17 +414,19 @@ footer {
 
 .formTitle p {
     font-size: 0.9em;
-    padding-bottom: 2em;
+    padding-bottom: 0em;
     padding-top: 1em;
+    font-weight: 500;
 }
 
 .questionForm form {
     background-color: #fff;
-    box-shadow: 0 0 4px 0 #000;
+    box-shadow: 0 0 12px 0 #e9e8e8;
     padding: 2em 6em;
     flex-direction: column;
     border-radius: 19px;
     position: absolute;
+    padding-top: 3em;
 }
 
 .formTitle {
@@ -413,44 +434,249 @@ footer {
 }
 
 .closeIcon {
-    position: relative;
-    left: 15em;
+    position: absolute;
+    border-style: solid;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #d6d6d6;
+    top: 21px;
+    right: 23px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.closeIcon:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
 .formGroup {
     display: flex;
-    padding-bottom: 0.8em;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 0.8em; */
     width: 100%;
+    position: relative;
+    /*  make label relate to div  */
+    padding-top: 10px;
+    /*  make space for label      */
+}
+
+.firstInput {
+    padding-right: 1em;
+}
+
+.secondInput,
+.firstInput,
+.textareaLabel {
+    display: flex;
+    padding-bottom: 0.5em;
+    width: 100%;
+    position: relative;
+    /*  make label relate to div  */
+    padding-top: 10px;
+    /*  make space for label      */
+}
+
+.textareaLabel {
+    padding-bottom: 0.8em;
 }
 
 .formGroup input,
-.formGroupSingle input {
+.formGroupSingle input,
+.firstInput input {
     width: 100%;
-    height: 41px;
-    border-radius: 7px;
+    height: 50px;
+    border-radius: 11px;
     border-color: #ececec;
     border-style: solid;
     padding: 0em 1em;
+    font-family: Lexend, sans-serif;
+    font-weight: 500;
 }
 
 .formGroup input:nth-child(1) {
-    margin-right: 1em;
+    /* margin-right: 1em; */
 }
 
 .formGroup textarea {
     width: 100%;
-    border-radius: 7px;
+    height: 116px;
+    border-radius: 11px;
     border-color: #ececec;
     border-style: solid;
-    padding: 0em 1em;
+    border-width: 2px;
+    padding: 1em 1em;
 }
 
 .formGroupSingle {
     width: 100%;
-    padding-bottom: 0.8em;
+    /* padding-bottom: 0.8em; */
+    position: relative;
+    /*  make label relate to div  */
+    padding-top: 10px;
+    /*  make space for label      */
 }
 
-.formGroupSingle input {}
+input::placeholder,
+textarea::placeholder {
+    color: #747474;
+    font-weight: 500;
+    font-family: Lexend, sans-serif;
+}
+
+.required {
+    border-color: #d11313 !important;
+}
+
+.requiredLabel {
+    color: #d11313 !important;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ececec;
+    border-style: solid;
+    border-radius: 11px;
+    border-color: #45a8d5ff;
+}
+
+input:focus::placeholder {
+    color: #45a8d5ff;
+}
+
+.formGroupSingle input:focus~.floatingLabel,
+.formGroupSingle input:not(:focus):valid~.floatingLabel,
+input:focus~.floatingLabel,
+input:not(:focus):valid~.floatingLabel,
+textarea:focus~.floatingLabel,
+textarea:not(:focus):valid~.floatingLabel {
+    top: 16px;
+    bottom: 15px;
+    left: 14px;
+    font-size: 9px;
+    opacity: 1;
+    color: #45a8d5ff;
+}
+
+.formGroupSingle img {
+    position: absolute;
+    right: 12px;
+    top: 22px;
+}
+
+.formGroup input:focus~.floatingLabel,
+.formGroup input:not(:focus):valid~.floatingLabel,
+.firstInput input:focus~.floatingLabel,
+.firstInput input:not(:focus):valid~.floatingLabel {
+    top: 28px;
+    bottom: 15px;
+    left: 14px;
+    font-size: 9px;
+    opacity: 1;
+    color: #45a8d5ff;
+}
+
+.secondInput input:focus~.floatingLabel,
+.secondInput input:not(:focus):valid~.floatingLabel,
+.firstInput input:focus~.floatingLabel,
+.firstInput input:not(:focus):valid~.floatingLabel {
+    top: 17px;
+    bottom: 15px;
+    left: 14px;
+    font-size: 9px;
+    opacity: 1;
+    color: #45a8d5ff;
+}
+
+.floatingLabel {
+    position: absolute;
+    pointer-events: none;
+    top: 38px;
+    bottom: 10px;
+    left: 15px;
+    transition: 0.2s ease all;
+    font-size: 13px;
+    color: #747474;
+}
+
+.secondInput .floatingLabel,
+.formGroupSingle .floatingLabel,
+.firstInput .floatingLabel {
+    position: absolute;
+    pointer-events: none;
+    top: 27px;
+    bottom: 10px;
+    left: 15px;
+    transition: 0.2s ease all;
+    font-size: 13px;
+    color: #747474;
+}
+
+.textareaLabel .floatingLabel {
+    position: absolute;
+    pointer-events: none;
+    top: 27px;
+    bottom: 10px;
+    left: 15px;
+    transition: 0.2s ease all;
+    font-size: 13px;
+    color: #747474;
+}
+
+.formButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background: linear-gradient(90deg, #1bcc97ff 10%, #45a8d5ff 90%);
+    color: #fff;
+    padding: 0.8em 1.2em;
+    border-style: none;
+    border-radius: 16px;
+    font-size: 0.9em;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 12px 0 #e0e0e0;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(0deg, #1bcc97ff 10%, #45a8d5ff 90%);
+    transition: all 0.3s ease-in-out;
+}
+
+.formButton small a {
+    text-decoration: underline;
+    color: #1bcc97ff;
+}
+
+.privacy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.privacyCheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 /* Media Quaries*/
 

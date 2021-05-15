@@ -16,6 +16,7 @@ export default function app() {
       <Qualifications/>
       <Booking />
       <Footer />
+      <QuestionForm />
       {/* <QuestionForm/> */}
     </>
   )
