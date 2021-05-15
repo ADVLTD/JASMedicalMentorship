@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Nav() {
+export default function Nav({acceptCookies}) {
     return (
         <div>
             {/* The nave lies over here */}
@@ -12,7 +12,7 @@ export default function Nav() {
           <a href="#">Learn More</a>
         </div>
         <div className="cookiesAccept">
-          <a href="#">Accept</a>
+          <a href="#" onClick={acceptCookies}>Accept</a>
         </div>
       </header>
     </div>
