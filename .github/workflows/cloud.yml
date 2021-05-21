@@ -1,5 +1,5 @@
 
-name: Alsaab
+name: alsaab
 
 on:
   push:
@@ -11,7 +11,7 @@ env:
   CLOUD_RUN_PROJECT_ID: ${{ secrets.CLOUD_RUN_PROJECT_NAME }}
   CLOUD_RUN_REGION: asia-northeast1
   # project-name but it can be anything you want
-  REPO_NAME: Alsaab
+  REPO_NAME: alsaab
 
 jobs:
   build-and-deploy:
